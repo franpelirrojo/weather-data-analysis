@@ -13,6 +13,8 @@ python -m venv venv
 source venv/bin/activate
 pip install ipykernel
 pip install pandas
+pip install numpy
+pip install requests
 pip install matplotlib 
 python -m ipykernel install --user --name weather --display-name "weather-proyecto"
 ```
@@ -22,4 +24,8 @@ A demás de los instrumentos básicos habituales, necesitaremos también:
 ```bash
 pip install jinja2 #Renderizar estilos en pandas
 pip install grequests #Peticiones https asincronas
+pip install plotly #Renderizar el mapa
 ```
+
+> [!WARNING]
+> grequests debe ser importado antes que requests. 
